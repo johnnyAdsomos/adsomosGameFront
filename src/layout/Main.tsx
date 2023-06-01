@@ -4,6 +4,8 @@ import { Global, css } from "@emotion/react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper, useMediaQuery } from "@mui/material";
 
+import Nav from "./Nav"
+
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 export default function Main() {
@@ -57,14 +59,12 @@ export default function Main() {
                     }
 
                     ::-webkit-scrollbar-track {
-                        background-color: ${mode === "dark"
-                            ? theme.palette.primary.dark
-                            : theme.palette.primary.light};
+                        background-color: ${theme.palette.background.default};
                         border-radius: 8px;
                     }
 
                     ::-webkit-scrollbar-thumb {
-                        background-color: #808080;
+                        background-color: #785A28;
                         border-radius: 8px;
                     }
                     ::-moz-selection {
@@ -95,11 +95,7 @@ export default function Main() {
                         transition: ".4s ease-out",
                     }}
                 >
-                    <Paper
-                    sx={{
-                        height: "10vh"
-                    }}
-                    ></Paper>
+                    <Nav />
                     <Outlet />
                 </Paper>
             </ThemeProvider>
