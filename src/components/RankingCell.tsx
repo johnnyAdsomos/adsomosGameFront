@@ -14,7 +14,7 @@ export default function RankingCell(props: RankingCellProps) {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                backgroundImage: `url(https://adgameback.vercel.app/assets/${props.champion})`,
+                backgroundImage: `url(https://adgameback.vercel.app/static/${props.champion}.jpg)`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "0 -15vh",
                 minHeight: "40vh",
