@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './layout/Main'
 import Login from './pages/Login'
-import Ranking from './pages/Ranking';
+import Profile from './pages/Profile'
+import Ranking from './pages/Ranking'
+import Quest from './pages/Quest'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
@@ -11,6 +13,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
             <Route path="/" element={<Layout />}>
                 <Route index element={<Ranking />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/quest" element={<Quest />} />
             </Route>
         </Routes>
     </BrowserRouter>
