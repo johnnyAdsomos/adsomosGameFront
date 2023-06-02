@@ -53,6 +53,8 @@ export default function Main() {
                         list-style: none;
                         border: 0;
                         text-decoration: none;
+                        font-family: monospace;
+                        font-size: 20px;
                     }
                     ::-webkit-scrollbar {
                         width: 8px;
