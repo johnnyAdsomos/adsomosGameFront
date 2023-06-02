@@ -31,9 +31,21 @@ const Nav: React.FC = () => {
                 <Link to="/quest">Missões</Link>
                 <Link to="/profile">Perfil</Link>
             </Box>
-            <Link to="/login" css={css`
-                margin-right: 1vw;
-            `}>Login</Link>
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                }}
+            >
+                <Link to="/signup" css={css`
+                    margin-right: 2vw;
+                `}
+                >Cadastrar</Link>
+                <Link to="/login" css={css`
+                    margin-right: 2vw;
+                `}>Login</Link>
+            </Box>
         </Box>
     )
 }

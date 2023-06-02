@@ -26,6 +26,7 @@ const Login: React.FC = () => {
                     id="standard-basic"
                     label="Usuário"
                     variant="filled"
+                    size="small"
                     sx={{
                         backgroundColor: "#bbbbbb",
                         color: "#808080",
@@ -38,6 +39,7 @@ const Login: React.FC = () => {
                     id="standard-basic"
                     label="Password"
                     variant="filled"
+                    size="small"
                     sx={{
                         backgroundColor: "#bbbbbb",
                         color: "#808080",
