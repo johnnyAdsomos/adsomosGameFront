@@ -14,8 +14,9 @@ const Match: React.FC = () => {
             >
                     <Typography variant='h6'>Tícket correto</Typography>
                     <Typography marginLeft={5} >3</Typography>
-                <ArrowDropUpRounded color='success' fontSize='large'/>
-                {/* <ArrowDropDownRounded color='error' fontSize='large'/> */}
+                    {true ? <ArrowDropUpRounded color='success' fontSize='large'/> : 
+                        <ArrowDropDownRounded color='error' fontSize='large'/>
+                    }
             </Box>
         </Tooltip>
     )

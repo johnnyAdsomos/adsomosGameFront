@@ -1,10 +1,6 @@
 import React from "react";
 import { Button, Paper, Box, TextField, Autocomplete, FormLabel, Tooltip, Checkbox } from "@mui/material";
 import { AdminPanelSettingsOutlined, AdminPanelSettings, AccountCircleOutlined, AccountCircle } from '@mui/icons-material'
-interface ChampionOption {
-    label: string;
-    value: string;
-}
 
 const champions = [
     { label: "Yasuo", value: "Yasuo" }, 
@@ -18,6 +14,7 @@ const SignUp: React.FC = () => {
     const handleChangeType = (input) => {
         setType(input)
     };
+    console.log(championValue)
     return (
         <Paper>
             <Box
@@ -73,6 +70,7 @@ const SignUp: React.FC = () => {
                     onChange={(event: any, champion: any) => {
                         selectChampion(champion.label);
                         selectChampionValue(champion.value);
+                        console.log(event)
                     }}
                     renderInput={(params) => (
                         <TextField {...params} label="Champions" variant="filled" />
